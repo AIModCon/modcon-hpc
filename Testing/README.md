@@ -81,5 +81,4 @@ int main(int argc, char* argv[])
 ```
 
 This code initializes AMReX, creates a MultiFab for a scalar field `A` on a given BoxArray `ba`, sets initial values for `A`, and writes a plotfile `output.pots` with the scalar field data. The plotfile format is Potsdam format (`.pots`).
-```
 
