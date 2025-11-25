@@ -65,3 +65,4 @@ In your terminal (inside your virtual environment), run:
 ```bash
 huggingface-cli login
 ```
+Enter the token to login
