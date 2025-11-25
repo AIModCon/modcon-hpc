@@ -1,6 +1,7 @@
 # Mistral Environment Setup on Scratch
 
-This README sets up a Python environment for running Mistral models on a scratch filesystem. Copy-paste the entire block below into your terminal.
+This README sets up a Python environment for running Mistral models on a Linux filesystem. 
+The Perlmutter scratch is chosen to do the installation.
 
 ```bash
 # Create a folder for your environment and set up a virtual environment
@@ -11,6 +12,7 @@ python -m venv $SCRATCH/mistral-env
 source $SCRATCH/mistral-env/bin/activate
 
 # Configure Hugging Face cache
+# Add the following to ~/.bash_profile
 export HF_HOME=$SCRATCH/huggingface
 source ~/.bash_profile
 mkdir -p $HF_HOME
@@ -39,5 +41,30 @@ huggingface-cli download mistralai/Mistral-7B-Instruct-v0.2 --local-dir /pscratc
 
 # Optionally, set Hugging Face home to a persistent location
 export HF_HOME=/pscratch/sd/n/nataraj2/.hf
+
+
+# Hugging Face Authentication for Mistral Models
+
+To download Mistral models (or other private Hugging Face models), you need to authenticate with your Hugging Face account using an access token.
+
+## 1. Create a Hugging Face account
+
+If you don’t already have one, go to [https://huggingface.co/join](https://huggingface.co/join) and create an account.
+
+## 2. Generate an access token
+
+1. Go to [https://huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)  
+2. Click **“New token”**  
+3. Give it a name (e.g., `scratch-access`) and select **read** scope (or `write` if needed).  
+4. Copy the generated token.
+
+## 3. Use the token to login
+
+In your terminal (inside your virtual environment), run:
+
+```bash
+huggingface-cli login
+
+
 
 
