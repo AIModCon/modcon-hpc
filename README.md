@@ -33,7 +33,7 @@ export PYTHONPATH=$SCRATCH/mistral-env/lib/python3.10/site-packages:$PYTHONPATH
 python -c "import torch; print(torch.cuda.is_available())"
 python -c "import transformers; print(transformers.__version__)"
 
-# Login to Hugging Face
+# Login to Hugging Face (see next section for details)
 huggingface-cli login
 
 # Download the Mistral model
