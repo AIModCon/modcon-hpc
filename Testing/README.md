@@ -6,8 +6,7 @@ An example is
 ```
 Can you write an AMReX code that demonstrates the creation of a MultiFab and writes a plotfile with this multifab in it?
 ```
-
-2.Get a GPU interactive node
+2. Get a GPU interactive node  
 
 3. Run the inference as 
 ```
