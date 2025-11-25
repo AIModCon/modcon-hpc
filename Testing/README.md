@@ -1,8 +1,6 @@
 # How to run inference?
 
-1. A prompt should be given in a text file `prompt.txt`.
-
-An example is 
+1. A prompt should be given in a text file `prompt.txt`. An example is 
 ```
 Can you write an AMReX code that demonstrates the creation of a MultiFab and writes a plotfile with this multifab in it?
 ```
