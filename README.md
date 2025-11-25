@@ -43,22 +43,22 @@ huggingface-cli download mistralai/Mistral-7B-Instruct-v0.2 --local-dir /pscratc
 export HF_HOME=/pscratch/sd/n/nataraj2/.hf
 ```
 
-# Hugging Face Authentication for Mistral Models
+## Hugging Face Authentication for Mistral Models
 
 To download Mistral models (or other private Hugging Face models), you need to authenticate with your Hugging Face account using an access token.
 
-## 1. Create a Hugging Face account
+### 1. Create a Hugging Face account
 
 If you don’t already have one, go to [https://huggingface.co/join](https://huggingface.co/join) and create an account.
 
-## 2. Generate an access token
+### 2. Generate an access token
 
 1. Go to [https://huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)  
 2. Click **“New token”**  
 3. Give it a name (e.g., `scratch-access`) and select **read** scope (or `write` if needed).  
 4. Copy the generated token.
 
-## 3. Use the token to login
+### 3. Use the token to login
 
 In your terminal (inside your virtual environment), run:
 
