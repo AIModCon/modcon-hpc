@@ -41,7 +41,7 @@ huggingface-cli download mistralai/Mistral-7B-Instruct-v0.2 --local-dir /pscratc
 
 # Optionally, set Hugging Face home to a persistent location
 export HF_HOME=/pscratch/sd/n/nataraj2/.hf
-
+```
 
 # Hugging Face Authentication for Mistral Models
 
