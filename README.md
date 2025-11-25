@@ -1,4 +1,4 @@
-# Mistral Environment Setup on Scratch
+# Mistral Environment Setup on Linux
 
 This README sets up a Python environment for running Mistral models on a Linux filesystem. 
 The Perlmutter scratch is chosen to do the installation.
