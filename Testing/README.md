@@ -11,9 +11,7 @@ Can you write an AMReX code that demonstrates the creation of a MultiFab and wri
 python3 test_mistral.py
 ```
 
-4. The output is written into a file `output.txt`
-
-The above prompt gave the following output
+4. The output is written into a file `output.txt`. The above prompt gave the following output -
 
 ```
 Can you write an AMReX code that demonstrates the creation of a MultiFab and writes a plotfile with this multifab in it?
