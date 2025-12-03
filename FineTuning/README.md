@@ -11,7 +11,9 @@ python3 ConvertToJSONL.py
 This will produce the instruction response pairs in `.jsonl` format that is needed for fine tuning.
 
 3. Enter the Mistral environment created using the steps mentioned in the [README section](https://github.com/AIModCon/modcon-hpc/tree/main?tab=readme-ov-file#mistral-environment-setup-on-linux) 
-`source /pscratch/sd/n/nataraj2/mistral-env/bin/activate`
+```
+source <path-to-mistral-env>/bin/activate
+```
 4. Get a GPU node and run the python script for fine tuning 
 `python3 FineTuning.py`
 
