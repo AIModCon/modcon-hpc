@@ -1,19 +1,20 @@
 # How to run inference?
 
-1. `source /pscratch/sd/n/nataraj2/mistral-env/bin/activate`
+1. Enter the Mistral environment created using the steps mentioned in the [README section](https://github.com/AIModCon/modcon-hpc/tree/main?tab=readme-ov-file#mistral-environment-setup-on-linux)
+`source /pscratch/sd/n/nataraj2/mistral-env/bin/activate`
 
-1. A prompt should be given in a text file `prompt.txt`. An example is 
+2. A prompt should be given in a text file `prompt.txt`. An example is 
 ```
 Can you write an AMReX code that demonstrates the creation of a MultiFab and writes a plotfile with this multifab in it?
 ```
-2. Get a GPU interactive node  
+3. Get a GPU interactive node  
 
-3. Run the inference as 
+4. Run the inference as 
 ```
 python3 inference.py
 ```
 
-4. The output is written into a file `output.txt`. The above prompt gave the following output -
+5. The output is written into a file `output.txt`. The above prompt gave the following output -
 
 ```
 Can you write an AMReX code that demonstrates the creation of a MultiFab and writes a plotfile with this multifab in it?
