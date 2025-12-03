@@ -6,7 +6,7 @@
 2. Convert the instruction response pairs to `.jsonl` format by running the python script
 ```
 cd InstructionResponsePairs
-python3 ConvertToJSCONL.py
+python3 ConvertToJSONL.py
 ```
 This will produce the instruction response pairs in `.jsonl` format that is needed for fine tuning.
 
