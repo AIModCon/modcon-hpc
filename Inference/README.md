@@ -1,7 +1,9 @@
 # How to run inference?
 
 1. Enter the Mistral environment created using the steps mentioned in the [README section](https://github.com/AIModCon/modcon-hpc/tree/main?tab=readme-ov-file#mistral-environment-setup-on-linux)
-`source /pscratch/sd/n/nataraj2/mistral-env/bin/activate`
+```
+source /pscratch/sd/n/nataraj2/mistral-env/bin/activate
+```
 
 2. A prompt should be given in a text file `prompt.txt`. An example is 
 ```
