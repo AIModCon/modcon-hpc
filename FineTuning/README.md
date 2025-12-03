@@ -2,10 +2,18 @@
 
 ## What is needed?
 
-Instruction-response pairs 
+1. [Instruction-response pairs as in the InstructionResponsePairs folder](https://github.com/AIModCon/modcon-hpc/blob/main/FineTuning/InstructionResponsePairs/amrex_inst_resp_pairs.txt)
+2. Convert the instruction response pairs to `.jsonl` format by running the python script
+```
+cd InstructionResponsePairs
+python3 ConvertToJSCONL.py
+```
+This will produce the instruction response pairs in `.jsonl` format that is needed for fine tuning.
 
-1. `source /pscratch/sd/n/nataraj2/mistral-env/bin/activate`
-2. `python3 FineTuning.py`
+3. Enter the mistral environment created using the steps mentioned in the [README section](https://github.com/AIModCon/modcon-hpc/tree/main?tab=readme-ov-file#mistral-environment-setup-on-linux) 
+`source /pscratch/sd/n/nataraj2/mistral-env/bin/activate`
+4. Get a GPU node and run the python script for fine tuning 
+`python3 FineTuning.py`
 
 ![Example of fine tuning of mistral 7b model on Perlmutter GPUs for AMReX](../Images/FineTuning.gif)
 
