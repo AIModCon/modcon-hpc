@@ -1,0 +1,1 @@
+Can you write an AMReX code that demonstrates the creation of a MultiFab and writes a plotfile with this multifab in it?
