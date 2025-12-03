@@ -1,6 +1,6 @@
 # How to run inference?
 
-1. 1. `source /pscratch/sd/n/nataraj2/mistral-env/bin/activate`
+1. `source /pscratch/sd/n/nataraj2/mistral-env/bin/activate`
 
 1. A prompt should be given in a text file `prompt.txt`. An example is 
 ```
