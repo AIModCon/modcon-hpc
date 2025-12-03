@@ -66,3 +66,11 @@ In your terminal (inside your virtual environment), run:
 huggingface-cli login
 ```
 Enter the token to login
+
+# How to do inference
+![See the README.md in the Inference directory.](https://github.com/AIModCon/modcon-hpc/tree/main/Inference)
+
+# How to do fine tuning
+![See the README.md in the FineTuning directory.](https://github.com/AIModCon/modcon-hpc/tree/main/FineTuning)
+
+
