@@ -1,8 +1,20 @@
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
+import argparse
 
-model_path = "/pscratch/sd/n/nataraj2/mistral-7b"
+# Parse command-line arguments
+parser = argparse.ArgumentParser(description="Generate text from a model")
+parser.add_argument(
+    "--model_dir",
+    type=str,
+    required=True,
+    help="Path to the model directory"
+)
+args = parser.parse_args()
 
+model_path = args.model_dir
+
+# Load tokenizer and model
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForCausalLM.from_pretrained(
     model_path,
